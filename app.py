@@ -30,7 +30,7 @@ from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 
-REDIS_URL = os.environ.get("REDIS_URL", "")
+REDIS_URL = os.environ.get("REDIS_URL") or os.environ.get("KV_URL") or ""
 
 # grading rules, adjustable from Railway variables without a code change
 TARGET_PCT = float(os.environ.get("TARGET_PCT", "3"))
