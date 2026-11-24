@@ -6,6 +6,6 @@ It takes in price bars from the ticker tracker and checks them for candlestick p
 
 The repo is checked every morning by Control Troll.
 
-Latest change: Created the signal snapshot backend. It takes in price bars, detects patterns, logs snapshots, grades them, and serves a report. A small deploy fix followed the same day.
+Latest change: 2026-11-24, v2026.11.24. The root address now answers with the service name and its routes instead of a not found page.
 
 See CHANGELOG.md for the full history.

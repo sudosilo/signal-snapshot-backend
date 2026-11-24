@@ -301,6 +301,11 @@ def grade_pending():
 
 # ---------------------------------------------------------------- routes
 
+@app.get("/")
+def root():
+    return {"service": "signal snapshot backend", "routes": ["/health", "/bars", "/signals", "/grade", "/report"]}
+
+
 @app.get("/health")
 def health():
     ok = False
